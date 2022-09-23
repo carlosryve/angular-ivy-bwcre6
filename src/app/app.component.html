@@ -1,0 +1,15 @@
+<div class="po-wrapper">
+  <po-menu [p-collapsed]="true" [p-menus]="menus" [p-service]="appService">
+    <div
+      *p-menu-header-template
+      class="po-p-2 po-font-title sample-menu-header-text-color"
+    ></div>
+  </po-menu>
+
+  <po-toolbar
+    p-title="PO - Human Resources"
+    [p-show-notification]="false"
+  ></po-toolbar>
+
+  <po-page-default [p-title]="menuItemSelected"></po-page-default>
+</div>
